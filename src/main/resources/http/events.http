@@ -1,0 +1,36 @@
+### Добавление первого события
+POST http://localhost:8080/api/events
+Content-Type: application/json
+
+{
+  "description": "пойти на свадьбу к Вадиму",
+  "date": "30.07.2023"
+}
+
+
+### Добавление второго события
+POST http://localhost:8080/api/events
+Content-Type: application/json
+
+{
+  "description": "пойти на забастову",
+  "date": "12.08.2023"
+}
+
+### Получение всех событий
+GET http://localhost:8080/api/events
+
+### Удаление события
+DELETE http://localhost:8080/api/events/2
+
+### Обновление события
+PUT http://localhost:8080/api/events/1
+Content-Type: application/json
+
+{
+  "newDescription" : "собрание профсоюза",
+  "newDate": "14.08.2023"
+}
+
+### Получаем событие
+GET http://localhost:8080/api/events/1

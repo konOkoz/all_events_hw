@@ -1,0 +1,35 @@
+### Добавление статьи пользователю
+POST http://localhost:8080/api/articles
+Content-Type: application/json
+
+{
+  "text": "Статья о Марселе, преподавателе AIT",
+  "aboutUserId": 1,
+  "publishDate": "2022-02-02"
+}
+
+### Добавление второй статьи пользователю
+POST http://localhost:8080/api/articles
+Content-Type: application/json
+
+{
+  "text": "Любит быстро обьяснять",
+  "aboutUserId": 1,
+  "publishDate": "2022-02-22"
+}
+
+### Добавление третьей статьи пользователю
+POST http://localhost:8080/api/articles
+Content-Type: application/json
+
+
+{
+  "text": "Понимает фронт-енд",
+  "aboutUserId": 1,
+  "publishDate": "2021-02-02"
+}
+### Получение всех статей о пользователе
+GET http://localhost:8080/api/users/1/articles
+
+### Получение всех статей по дате
+GET http://localhost:8080/api/articles?year=2023&month=2
